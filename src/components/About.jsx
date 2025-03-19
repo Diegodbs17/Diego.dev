@@ -9,7 +9,7 @@ function About() {
                     <h2 className="title-section">Diego<br/>Dubois</h2>
                 </div>
                 <div className="about-right">
-                    <p className="about-paragraph">Je m'appelle Diego Dubois, développeur web freelance de 22 ans. Après avoir suivi la formation "Développeur Web" sur OpenClassrooms, je me spécialise dans la création de sites web et l'optimisation SEO. Passionné par le développement, je cherche à créer des expériences utilisateurs de qualité tout en apportant des solutions techniques efficaces.</p>
+                    <p className="about-paragraph">My name is Diego Dubois, a 22-year-old freelance web developer. After completing the "Web Developer" course on OpenClassrooms, I specialize in website creation and SEO optimization. Passionate about development, I strive to create quality user experiences while providing effective technical solutions.</p>
                 </div>
             </div>
         </div>

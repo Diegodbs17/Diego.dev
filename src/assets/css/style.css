@@ -1,4 +1,5 @@
 /* GLOBAL */
+
 @font-face {
     font-family: 'Druk Wide Bold Bold';
     font-style: normal;
@@ -19,15 +20,15 @@ body {
 
 /* HEADER */
 
-.logo {
-    font-family: 'Druk Wide Bold Bold';
-}
-
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 20px;
+}
+
+.logo {
+    font-family: 'Druk Wide Bold Bold';
 }
 
 .nav-content {
@@ -49,12 +50,14 @@ body {
 
 .herohome {
     background-image: url("grid.svg");
+    height: 96vh;
+    border-bottom: 1px solid #fff;
 }
 
 .herohome-content {
     display: flex;
     justify-content: center;
-    height: 700px;
+    height: 55vh;
     align-items: center;
 }
 
@@ -70,7 +73,6 @@ body {
   margin-inline: auto;
   position: relative;
   height: 100px;
-  margin-top: 5rem;
   padding-bottom: 100px;
   overflow: hidden;
   mask-image: linear-gradient(
@@ -138,6 +140,8 @@ body {
 
 .about {
     margin: 100px 0;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 100px;
 }
 
 .about-content {
@@ -160,8 +164,6 @@ body {
     font-size: 18px;
     line-height: 25px;
 }
-
-
 
 /* WORK */
 
