@@ -1,0 +1,38 @@
+[
+	{
+	  "id": 1,
+	  "number": "01",
+	  "title": "Booki",
+	  "description": "Booki est une plateforme de réservation d’hébergements et d’activités que j’ai développée dans le cadre de ma formation sur OpenClassrooms. L’objectif de ce projet était d’intégrer une maquette fournie en utilisant uniquement HTML et CSS, sans JavaScript. J’ai travaillé sur la structuration en HTML sémantique, la mise en page avec Flexbox et CSS Grid, ainsi que l’adaptation du site en responsive design pour garantir une expérience fluide sur desktop, tablette et mobile. J’ai également veillé à assurer la compatibilité cross-browser et à respecter les bonnes pratiques d’intégration web. Ce projet m’a permis de renforcer mes compétences en intégration front-end et de produire une interface moderne et fidèle à la maquette fournie.",
+	  "image": "maquette-booki.webp",
+	  "link": "https://diegodbs17.github.io/OpenClassroomsP2/"
+	},
+	{
+	  "id": 2,
+	  "number": "02",
+	  "title": "Projet 2",
+	  "description": "Description du projet 2",
+	  "image": "image2.jpg"
+	},
+	{
+		"id": 3,
+		"number": "03",
+		"title": "Projet 3",
+		"description": "Description du projet 3",
+		"image": "image2.jpg"
+	  },
+	  {
+		"id": 4,
+		"number": "04",
+		"title": "Projet 4",
+		"description": "Description du projet 4",
+		"image": "image4.jpg"
+	  },
+	  {
+		"id": 5,
+		"number": "05",
+		"title": "Projet 5",
+		"description": "Description du projet 5",
+		"image": "image5.jpg"
+	  }
+]

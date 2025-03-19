@@ -1,23 +1,20 @@
-import Header from "./components/Header";
-import Herohome from "./components/Herohome";
-import Defilement from "./components/Defilement";
-import About from "./components/About";
-import Work from "./components/Work";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
+import { Routes, Route } from "react-router";
+import Layout from "./components/Layout";
+import Home from "./pages/Home";
+import Work from "./pages/Work";
+import Error from "./pages/Error";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-    <Header />
-    <Herohome />
-    <About />
-    <Work />
-    <Contact />
-    <Footer/>
-    </>
-  )
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />} />
+        <Route path="*" element={<Error />} />
+        <Route path="/error" element={<Error />} />
+        <Route path="/Work/:id" element={<Work />} />
+      </Route>
+    </Routes>
+  );
 }
 
 export default App

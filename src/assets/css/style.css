@@ -20,11 +20,15 @@ body {
 
 /* HEADER */
 
+.header {
+    border-bottom: 1px solid #fff;
+    padding: 20px 0;
+}
+
 .header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 20px;
 }
 
 .logo {
@@ -169,6 +173,8 @@ body {
 
 .project-section {
     margin-bottom: 100px;
+    padding-bottom: 100px;
+    border-bottom: 1px solid #fff;
 }
 
 .section-title {
@@ -229,6 +235,11 @@ body {
 
 /* CONTACT */
 
+.contact {
+    padding-bottom: 100px;
+    border-bottom: 1px solid #fff;
+}
+
 .contact-content {
     display: flex;
     justify-content: space-between;
@@ -277,4 +288,10 @@ body {
 .copyright {
     margin-top: 20px;
     text-align: center;
+}
+
+/* WORK DETAILS */
+
+.works-details {
+    margin-top: 100px;
 }

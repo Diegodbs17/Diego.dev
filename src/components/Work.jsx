@@ -1,74 +1,54 @@
-import React from 'react';
-import ProjectCard from './ProjectCard';
-
-const projects = [
-  {
-    image: 'https://placehold.co/600x400',
-    title: 'Project 1',
-    description: 'Description du projet 1',
-    link: '#',
-    number: "01",
-  },
-  {
-    image: 'https://placehold.co/600x400',
-    title: 'Project 2',
-    description: 'Description du projet 2',
-    link: '#',
-    number: "02",
-  },
-  {
-    image: 'https://placehold.co/600x400',
-    title: 'Project 2',
-    description: 'Description du projet 2',
-    link: '#',
-    number: "03",
-  },
-  {
-    image: 'https://placehold.co/600x400',
-    title: 'Project 2',
-    description: 'Description du projet 2',
-    link: '#',
-    number: "04",
-  },
-  {
-    image: 'https://placehold.co/600x400',
-    title: 'Project 2',
-    description: 'Description du projet 2',
-    link: '#',
-    number: "05",
-  },
-  {
-    image: 'https://placehold.co/600x400',
-    title: 'Project 2',
-    description: 'Description du projet 2',
-    link: '#',
-    number: "06",
-  },
-  {
-    image: 'https://placehold.co/600x400',
-    title: 'Project 2',
-    description: 'Description du projet 2',
-    link: '#',
-    number: "07",
-  },
-  // Ajoutez d'autres projets ici
-];
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router";
 
 const ProjectSection = () => {
+  const [works, setWorks] = useState([]);
+  const [error, setError] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchWorks = async () => {
+      try {
+        const response = await fetch("/works.json");
+        if (!response.ok) {
+          throw new Error(`Erreur lors du chargement : ${response.status}`);
+        }
+        const data = await response.json();
+        setWorks(data);
+      } catch (err) {
+        setError(err.message);
+      } finally {
+        setLoading(false);
+      }
+    };
+    fetchWorks();
+  }, []);
+
+  if (loading) return <div>Chargement...</div>;
+  if (error) return <div>Erreur : {error}</div>;
+
   return (
     <section className="project-section">
         <div className="container">
             <h2 className="section-title">Works</h2>
-            <div className="project-grid">
-                {projects.map((project, index) => (
-                <ProjectCard
-                    key={index}
-                    image={project.image}
-                    title={project.title}
-                    description={project.description}
-                    link={project.link}
-                    number={project.number}
-                />
+            <div className="project-content">
+                {works.map((work, index) => (
+                <Link key={work.id} to={`/Work/${work.id}`}>
+                    <div className="project-card">
+                        <div className="card-content">
+                            <div className="number-card">
+                                <h2 className="project-number">{work.number}</h2>
+                            </div>
+                            <div className="project-info">
+                                <h3 className="project-title">{work.title}</h3>
+                                <p className="project-description">{work.description}</p>
+                            </div>
+                            <div className="img-card">
+                                <img src={work.image} alt={work.title} className="project-image" />
+                            </div>
+                        </div>
+                    </div>
+                </Link>
                 ))}
             </div>
         </div>
