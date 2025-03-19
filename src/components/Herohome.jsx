@@ -16,6 +16,8 @@ function Herohome() {
                 <div class="item item6"><h2 className="heading-slide">MongoDB</h2></div>
                 <div class="item item7"><h2 className="heading-slide">SEO</h2></div>
             </div>
+            <div className="scrolltoview">
+            </div>
         </div>
     </section>
   )

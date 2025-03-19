@@ -42,12 +42,16 @@ const WorksDetails = () => {
       <section className="works-details">
         <div className="container">
             <div className="works-details-content">
-                <img src={work.image} alt={work.title} />
-                <h2 className="section-title">{work.title}</h2>
-                <p className="works-details-para">{work.description}</p>
-                {work.link && (
-                    <a href={work.link} target="_blank" rel="noopener noreferrer" className="btn">Voir le projet</a>
-                )}
+                <div className="works-details-left">
+                    <h2 className="section-title">{work.title}</h2>
+                    {work.link && (
+                        <a href={work.link} target="_blank" rel="noopener noreferrer" className="works-details-btn">Voir le projet</a>
+                    )}
+                </div>
+                <div className="works-details-right">
+                    <img src={work.image} alt={work.title} />
+                    <p className="works-details-para">{work.description}</p>
+                </div>
             </div>
         </div>
       </section>

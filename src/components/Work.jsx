@@ -41,7 +41,6 @@ const ProjectSection = () => {
                             </div>
                             <div className="project-info">
                                 <h3 className="project-title">{work.title}</h3>
-                                <p className="project-description">{work.description}</p>
                             </div>
                             <div className="img-card">
                                 <img src={work.image} alt={work.title} className="project-image" />
