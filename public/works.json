@@ -28,7 +28,7 @@
 		"number": "04",
 		"title": "Kaza",
 		"description": "Kasa est un projet de plateforme de location d’hébergements entre particuliers, développé dans le cadre de ma formation sur OpenClassrooms. L’objectif était de créer une application web dynamique en utilisant React.js, tout en respectant une maquette fournie. J’ai mis en place la navigation avec React Router, géré les composants de manière modulaire et optimisé l'affichage des données via le state management. Le projet intègre également des animations pour améliorer l’expérience utilisateur, ainsi qu’un design responsive pour garantir une adaptation sur tous types d’écrans. Ce projet m’a permis de renforcer mes compétences en React, en gestion des états et des props, ainsi qu’en optimisation de l’interface utilisateur.",
-		"image": "image4.jpg",
+		"image": "https://raw.githubusercontent.com/Diegodbs17/Diego.dev/refs/heads/main/public/kaza.webp",
 		"link": ""
 	  },
 	  {

@@ -49,7 +49,7 @@ const WorksDetails = () => {
                     )}
                 </div>
                 <div className="works-details-right">
-                    <img src={work.image} alt={work.title} />
+                    <img className="img-works" src={work.image} alt={work.title} />
                     <p className="works-details-para">{work.description}</p>
                 </div>
             </div>
