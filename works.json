@@ -1,0 +1,42 @@
+[
+	{
+	  "id": 1,
+	  "number": "01",
+	  "title": "Booki",
+	  "description": "Booki est une plateforme de réservation d’hébergements et d’activités que j’ai développée dans le cadre de ma formation sur OpenClassrooms. L’objectif de ce projet était d’intégrer une maquette fournie en utilisant uniquement HTML et CSS, sans JavaScript. J’ai travaillé sur la structuration en HTML sémantique, la mise en page avec Flexbox et CSS Grid, ainsi que l’adaptation du site en responsive design pour garantir une expérience fluide sur desktop, tablette et mobile. J’ai également veillé à assurer la compatibilité cross-browser et à respecter les bonnes pratiques d’intégration web. Ce projet m’a permis de renforcer mes compétences en intégration front-end et de produire une interface moderne et fidèle à la maquette fournie.",
+	  "image": "https://raw.githubusercontent.com/Diegodbs17/Diego.dev/refs/heads/main/public/booki.webp",
+	  "link": "https://diegodbs17.github.io/OpenClassroomsP2/"
+	},
+	{
+	  "id": 2,
+	  "number": "02",
+	  "title": "Sophie Bluel",
+	  "description": "Sophie Bluel est un projet de portfolio pour une architecte d’intérieur, développé dans le cadre de ma formation sur OpenClassrooms. L’objectif était de concevoir un site dynamique en intégrant une interface d’administration permettant à l’utilisatrice de gérer ses projets. Pour cela, j’ai utilisé JavaScript afin de rendre l’expérience interactive, notamment en implémentant un système de connexion et de gestion des œuvres via une API. J’ai également travaillé sur l’intégration de la maquette en HTML et CSS, en veillant à respecter un design responsive et moderne. Ce projet m’a permis de renforcer mes compétences en développement front-end, en manipulation du DOM, en gestion des requêtes API REST, ainsi qu’en sécurité et validation des formulaires.",
+	  "image": "https://raw.githubusercontent.com/Diegodbs17/Diego.dev/refs/heads/main/public/sophiebluel.webp",
+	  "link": ""
+	},
+	{
+		"id": 3,
+		"number": "03",
+		"title": "Nina Carducci",
+		"description": "Nina Carducci est un projet de site vitrine pour une photographe professionnelle, réalisé dans le cadre de ma formation sur OpenClassrooms. L’objectif était d’optimiser les performances du site en améliorant son temps de chargement, son référencement SEO et son accessibilité. Pour cela, j’ai analysé et optimisé le code existant en réduisant le poids des images, en mettant en place un chargement différé des ressources et en optimisant les balises HTML pour un meilleur référencement naturel. J’ai également amélioré l’accessibilité en respectant les bonnes pratiques du WCAG et en rendant le site navigable au clavier et compatible avec les lecteurs d’écran. Ce projet m’a permis d’approfondir mes compétences en optimisation web, en SEO technique et en accessibilité numérique.",
+		"image": "https://raw.githubusercontent.com/Diegodbs17/Diego.dev/refs/heads/main/public/ninacarducci.webp",
+		"link": "https://diegodbs17.github.io/P4NincaCarducci/"
+	  },
+	  {
+		"id": 4,
+		"number": "04",
+		"title": "Kaza",
+		"description": "Kasa est un projet de plateforme de location d’hébergements entre particuliers, développé dans le cadre de ma formation sur OpenClassrooms. L’objectif était de créer une application web dynamique en utilisant React.js, tout en respectant une maquette fournie. J’ai mis en place la navigation avec React Router, géré les composants de manière modulaire et optimisé l'affichage des données via le state management. Le projet intègre également des animations pour améliorer l’expérience utilisateur, ainsi qu’un design responsive pour garantir une adaptation sur tous types d’écrans. Ce projet m’a permis de renforcer mes compétences en React, en gestion des états et des props, ainsi qu’en optimisation de l’interface utilisateur.",
+		"image": "https://raw.githubusercontent.com/Diegodbs17/Diego.dev/refs/heads/main/public/kaza.webp",
+		"link": ""
+	  },
+	  {
+		"id": 5,
+		"number": "05",
+		"title": "Mon Vieux Grimoire",
+		"description": "Mon Vieux Grimoire est un projet de site de gestion de livres anciens, réalisé dans le cadre de ma formation sur OpenClassrooms. L’objectif était de développer une application web interactive permettant aux utilisateurs d’ajouter, de modifier et de supprimer des livres de leur collection. J’ai utilisé React.js pour construire une interface dynamique et réactive, et j’ai mis en place un système de gestion des données avec localStorage pour la persistance des informations. Le projet inclut également un design responsive, garantissant une expérience utilisateur fluide sur desktop, tablette et mobile. Ce projet m’a permis de renforcer mes compétences en React, en gestion d’états et en manipulation du DOM tout en appliquant les bonnes pratiques de développement front-end.",
+		"image": "https://raw.githubusercontent.com/Diegodbs17/Diego.dev/refs/heads/main/public/monvieuxgrimoir.webp",
+		"link": ""
+	  }
+]
