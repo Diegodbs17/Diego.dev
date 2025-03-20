@@ -7,7 +7,7 @@ import Error from "./pages/Error";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+      <Route path="https://diegodbs17.github.io/Diego.dev" element={<Layout />}>
         <Route index element={<Home />} />
         <Route path="*" element={<Error />} />
         <Route path="/error" element={<Error />} />
