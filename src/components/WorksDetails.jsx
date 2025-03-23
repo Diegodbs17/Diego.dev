@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router";
+import { useParams, useNavigate, Link } from "react-router";
 
 const WorksDetails = () => {
   const { id } = useParams();
@@ -11,7 +11,7 @@ const WorksDetails = () => {
   useEffect(() => {
     const fetchWorksDetails = async () => {
       try {
-        const response = await fetch("/works.json");
+        const response = await fetch("https://raw.githubusercontent.com/Diegodbs17/Diego.dev/refs/heads/gh-pages/works.json");
         if (!response.ok) {
           throw new Error(`Erreur lors du chargement : ${response.status}`);
         }
@@ -43,6 +43,8 @@ const WorksDetails = () => {
         <div className="container">
             <div className="works-details-content">
                 <div className="works-details-left">
+                    <Link to="/" className="back-link-works"><i class="fa-solid fa-arrow-right back-link-worksdetails"></i></Link>
+                    
                     <h2 className="section-title">{work.title}</h2>
                     {work.link && (
                         <a href={work.link} target="_blank" rel="noopener noreferrer" className="works-details-btn">Voir le projet</a>

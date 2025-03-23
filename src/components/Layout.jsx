@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink, Outlet, Link } from "react-router"; 
+import { NavHashLink } from 'react-router-hash-link';
 
 function Layout() {
     const [isOpen, setIsOpen] = useState(false);
@@ -12,28 +13,31 @@ function Layout() {
         setIsOpen(false);
     };
 
+
     return (
         <div>
-            <header className="header">
+            <header className="header" id="header">
                 <div className="container header-content">
                     <Link to="/">
                         <h1 className="logo">Diego.dev</h1>
                     </Link>
                     <nav className="nav-content">
                         <ul className="nav-list">
-                            <li className="nav-item"><NavLink to="/" className="nav-link" end>Home</NavLink></li>
-                            <li className="nav-item" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>
-                                <NavLink to="/" className="nav-link" end>About</NavLink>
+                            <li className="nav-item">
+                                <NavHashLink className="nav-link" smooth to="/#header">Accueil</NavHashLink>
                             </li>
-                            <li className="nav-item" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>
-                                <NavLink to="/" className="nav-link" end>Works</NavLink>
+                            <li className="nav-item">
+                                <NavHashLink className="nav-link" smooth to="/#about">À Propos</NavHashLink>
                             </li>
-                            <li className="nav-item" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>
-                                <NavLink to="/" className="nav-link" end>Contact</NavLink>
+                            <li className="nav-item">
+                                <NavHashLink className="nav-link" smooth to="/#works">Projets</NavHashLink>
+                            </li>
+                            <li className="nav-item">
+                                <NavHashLink className="nav-link" smooth to="/#contact">Contact</NavHashLink>
                             </li>
                         </ul>
                     </nav>
-                    <button className="nav-btn" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>Contactez-moi</button>
+                    <Link to="https://github.com/Diegodbs17?tab=repositories" className="github-link"><i class="fa-brands fa-github"></i></Link>
                     <span className="btn-nav-responsive" onClick={openMenu}>
                         <i className="fa-solid fa-bars"></i>
                     </span>
@@ -44,22 +48,20 @@ function Layout() {
                         <nav className="nav-content-responsive">
                             <ul className="nav-list-responsive">
                                 <li className="nav-item-responsive" onClick={closeMenu}>
-                                    <NavLink to="/" className="nav-link" end>Home</NavLink>
+                                    <NavHashLink className="nav-link" smooth to="/#header">Accueil</NavHashLink>
                                 </li>
-                                <li className="nav-item-responsive" onClick={() => { closeMenu(); window.scrollTo({ top: 1000, behavior: "smooth" }); }}>
-                                    <NavLink to="/" className="nav-link" end>About</NavLink>
+                                <li className="nav-item-responsive" onClick={() => { closeMenu()}}>
+                                    <NavHashLink className="nav-link" smooth to="/#about">À Propos</NavHashLink>
                                 </li>
-                                <li className="nav-item-responsive" onClick={() => { closeMenu(); window.scrollTo({ top: 1000, behavior: "smooth" }); }}>
-                                    <NavLink to="/" className="nav-link" end>Works</NavLink>
+                                <li className="nav-item-responsive" onClick={() => { closeMenu()}}>
+                                    <NavHashLink className="nav-link" smooth to="/#works">Projets</NavHashLink>
                                 </li>
-                                <li className="nav-item-responsive" onClick={() => { closeMenu(); window.scrollTo({ top: 1000, behavior: "smooth" }); }}>
-                                    <NavLink to="/" className="nav-link" end>Contact</NavLink>
+                                <li className="nav-item-responsive" onClick={() => { closeMenu()}}>
+                                    <NavHashLink className="nav-link" smooth to="/#contact">Contact</NavHashLink>
                                 </li>
                             </ul>
                         </nav>
-                        <button className="nav-btn-responsive" onClick={() => { closeMenu(); window.scrollTo({ top: 1000, behavior: "smooth" }); }}>
-                            Contactez-moi
-                        </button>
+                        <Link to="https://github.com/Diegodbs17?tab=repositories" className="github-link-responsive"><i class="fa-brands fa-github"></i></Link>
                     </div>
                 </div>
             </header>
@@ -74,19 +76,19 @@ function Layout() {
                             <div className="copyright">© 2025 Diego.dev All Rights Reserved</div>
                         </div>
                         <nav className="footer-nav">
-                            <h2 className="footer-nav-title">Links</h2>
+                            <h2 className="footer-nav-title">Liens</h2>
                             <ul className="footer-link-list">
-                                <li className="footer-nav-item" onClick={() => window.scrollTo({ top: -1000, behavior: "smooth" })}>
-                                    <NavLink to="/" className="footer-nav-link" end>Home</NavLink>
+                                <li className="footer-nav-item">
+                                    <NavHashLink className="footer-nav-link" smooth to="/#header">Accueil</NavHashLink>
                                 </li>
-                                <li className="footer-nav-item" onClick={() => window.scrollTo({ top: -1000, behavior: "smooth" })}>
-                                    <NavLink to="/" className="footer-nav-link" end>About</NavLink>
+                                <li className="footer-nav-item">
+                                    <NavHashLink className="footer-nav-link" smooth to="/#about">À Propos</NavHashLink>
                                 </li>
-                                <li className="footer-nav-item" onClick={() => window.scrollTo({ top: -1000, behavior: "smooth" })}>
-                                    <NavLink to="/" className="footer-nav-link" end>Works</NavLink>
+                                <li className="footer-nav-item">
+                                    <NavHashLink className="footer-nav-link" smooth to="/#about">Projets</NavHashLink>
                                 </li>
-                                <li className="footer-nav-item" onClick={() => window.scrollTo({ top: 1000, behavior: "smooth" })}>
-                                    <NavLink to="/" className="footer-nav-link" end>Contact</NavLink>
+                                <li className="footer-nav-item">
+                                    <NavHashLink className="footer-nav-link" smooth to="/#contact">Contact</NavHashLink>
                                 </li>
                             </ul>
                         </nav>

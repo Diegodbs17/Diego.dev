@@ -96,10 +96,14 @@ body {
     display: none;
 }
 
+.github-link, .github-link-responsive {
+    font-size: 25px;
+}
+
 /* HERO HOME */
 
 .herohome {
-    background-image: url("grid.svg");
+    background-image: url("https://raw.githubusercontent.com/Diegodbs17/Diego.dev/refs/heads/gh-pages/grid.svg");
     height: 96vh;
     border-bottom: 1px solid #fff;
 }
@@ -371,6 +375,17 @@ body {
     padding: 10px 20px;
 }
 
+.icon-responsive-project {
+    display: none;
+}
+
+.back-link-worksdetails {
+    rotate: -180deg;
+    font-size: 25px;
+    margin-bottom: 50px;
+    margin-right: 10px;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1440px) {
@@ -390,11 +405,14 @@ body {
 }
 
 @media screen and (max-width: 768px) {
-    .nav-content, .nav-btn {
+    .nav-content, .nav-btn, .github-link {
         display: none;
     }
-    .btn-nav-responsive {
+    .btn-nav-responsive, .github-link-responsive {
         display: block;
+    }
+    .btn-nav-responsive {
+        font-size: 25px;
     }
     .nav-responsive-menu.is-open {
         display: flex;
@@ -422,7 +440,7 @@ body {
     .nav-item-responsive {
         margin-top: 20px;
     }
-    .nav-btn-responsive {
+    .github-link-responsive {
         font-size: 25px;
         margin-top: 40px;
     }
@@ -430,7 +448,7 @@ body {
         position: absolute;
         top: 30px;
         right: 30px;
-        font-size: 50px;
+        font-size: 30px;
     }
     .herohome-title {
         font-size: 32px;
@@ -463,6 +481,11 @@ body {
     }
     .img-card {
         display: none;
+    }
+    .icon-responsive-project {
+        display: block;
+        font-size: 25px;
+        rotate: -30deg;
     }
     .contact-right {
         width: 200px;
