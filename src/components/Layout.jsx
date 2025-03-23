@@ -33,7 +33,7 @@ function Layout() {
                                 <NavHashLink className="nav-link" smooth to="/#works">Projets</NavHashLink>
                             </li>
                             <li className="nav-item">
-                                <NavHashLink className="nav-link" smooth to="/#contact">Contact</NavHashLink>
+                                <NavHashLink className="nav-link" smooth to="/#footer">Contact</NavHashLink>
                             </li>
                         </ul>
                     </nav>
@@ -57,7 +57,7 @@ function Layout() {
                                     <NavHashLink className="nav-link" smooth to="/#works">Projets</NavHashLink>
                                 </li>
                                 <li className="nav-item-responsive" onClick={() => { closeMenu()}}>
-                                    <NavHashLink className="nav-link" smooth to="/#contact">Contact</NavHashLink>
+                                    <NavHashLink className="nav-link" smooth to="/#footer">Contact</NavHashLink>
                                 </li>
                             </ul>
                         </nav>
@@ -68,7 +68,7 @@ function Layout() {
             <main>
                 <Outlet />
             </main>
-            <footer className="footer">
+            <footer className="footer" id="footer">
                 <div className="container">
                     <div className="footer-content">
                         <div className="footer-logo">
@@ -88,7 +88,7 @@ function Layout() {
                                     <NavHashLink className="footer-nav-link" smooth to="/#about">Projets</NavHashLink>
                                 </li>
                                 <li className="footer-nav-item">
-                                    <NavHashLink className="footer-nav-link" smooth to="/#contact">Contact</NavHashLink>
+                                    <NavHashLink className="footer-nav-link" smooth to="/#footer">Contact</NavHashLink>
                                 </li>
                             </ul>
                         </nav>

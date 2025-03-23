@@ -86,7 +86,7 @@ body {
     margin: 0 10px;
 }
 
-.nav-btn, .nav-btn-responsive {
+.nav-btn, .nav-btn-responsive, .link-error {
     border: 1px solid #fff;
     border-radius: 25px;
     padding: 10px;
@@ -386,6 +386,32 @@ body {
     margin-right: 10px;
 }
 
+/* ERROR */
+
+#error {
+    border-bottom: 1px solid #fff;
+}
+
+.error-404-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    flex-direction: column;
+}
+
+.error-heading {
+    font-family: 'Druk Wide Bold Bold';
+    font-size: 50px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.para-error {
+    margin-bottom: 30px;
+    font-size: 40px;
+}
+
 /* RESPONSIVE */
 
 @media screen and (max-width: 1440px) {
@@ -514,5 +540,11 @@ body {
     }
     .works-details-para {
         font-size: 16px;
+    }
+    .error-heading {
+        font-size: 30px;
+    }
+    .para-error {
+        font-size: 20px;
     }
 }
